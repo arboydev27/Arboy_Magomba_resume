@@ -1,0 +1,218 @@
+%-------------------------
+% Resume in Latex
+% Author : Arboy Magomba
+% Based off of: https://github.com/arboydev27/Arboy_Magomba_resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Arboy Magomba} \\ \vspace{1pt}
+    \small Norman, OK 73072 $|$
+    \small 405-274-6582 $|$
+    \href{mailto:x@x.com}{\underline{arboy@ou.edu}} $|$ 
+    \href{https://arboymagomba.com/}{\underline{arboymagomba.com}} $|$
+    \href{https://www.linkedin.com/in/arbogast-magomba-92a080241/}{\underline{linkedin.com/in/arboy}} $|$
+    \href{https://github.com/arboydev27}{\underline{github.com/arboydev27}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Oklahoma}{Norman, OK}
+      {Bachelor of Engineering in Computer Science}{Aug 2023 -- May 2027}
+      \small{\item{
+     \textbf{Relevant Coursework}{: Data Structures \& Algorithms, Discrete Structures, Programming Structures and Abstractions} \\}}
+  \resumeSubHeadingListEnd
+
+  %-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Java, C++, Python, Dart, JavaScript, HTML/CSS, SQL} \\
+     \textbf{Frameworks}{: React, Next.js, Node.js, Flutter, MongoDB, WordPress, Material-UI, RestfulAPI} \\
+     \textbf{Developer Tools}{: Git, GitHub, Google Firebase, Visual Studio Code, Eclipse, IntelliJ, Apache Cordova} \\
+    \textbf{Libraries \& Others}{: OpenCV, Pytest, JUnit, Bootstrap, Tailwind CSS, Figma}
+    }}
+ \end{itemize}
+
+ %-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{AI PromptHive Web App} $|$ \emph{Next.js, JavaScript, MongoDB, Google Cloud Platform}}{Dec 2024 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack web application using Next.js implementing AI prompt sharing capabilities and a local LLM}
+            \resumeItem{Implemented Google OAuth (Authentication) to enable users to sign-in using their Google account profiles}
+            \resumeItem{Used MongoDB for database management storing user profiles and their generated AI prompts}
+            \resumeItem{Trained and integrated Llama AI to the web application for office use}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Autocomplete Search Engine} $|$ \emph{Python, Django, Java, SpringBoot, PostgreSQL}}{Sep 2024 -- Nov 2024}
+          \resumeItemListStart
+            \resumeItem{Developed an auto-complete search engine for Oklahoma City Thunder NBA team's internal application}
+            \resumeItem{Built a functioning web application with a REST API that fetches player data from a PostgreSQL database (backend) and sends it to the frontend designed using Flutter and Angular}
+            \resumeItem{Functionalities include front-end office usage, scouting and coaching staff usage}
+            \resumeItem{The search algorithm ensures robust data handling and up to 15\% faster searching capabilities  }
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{Blockchain \& Mining Simulation Project} $|$ \emph{Java, IntelliJ IDEA}}{Jun 2024 -- Aug 2024}
+          \resumeItemListStart
+            \resumeItem{Engineered a java-based blockchain simulation demonstrating block creation, cryptographic hashing and Proof-of-Work mining}
+            \resumeItem{Using a validation mechanism, blocks are linked securely to the previous one, ensuring chain integrity.}
+            \resumeItem{The project is a practical, educational-tool for learning, testing and experimenting with blockchain technology.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software \& Game Developer}{Nov 2024 -- Present}
+      {K20 Center - University of Oklahoma}{Norman, OK}
+      \resumeItemListStart
+        \resumeItem{Utilized React frameworks for full-stack JavaScript development, ensuring scalable solutions across web platforms}
+        \resumeItem{Leveraged \emph{Llama AI} to train and deploy custom AI models, enhancing personalized user experiences}
+        \resumeItem{Contributed to the development of "Quest App", a mobile app enabling AR-based visits to different locations}
+        \resumeItem{Utilized Visual Studio Code and GitHub to streamline development and debugging processes}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Software Engineer}{Sep 2024 -- Present}
+      {Sooner Competitive Robotics}{Norman, OK}
+      \resumeItemListStart
+        \resumeItem{Collaborated with a team to design and build a tele-operated robot for a University-level robotics competition}
+        \resumeItem{Utilized Linux and Python as core development tools and environments}
+        \resumeItem{Enhanced robot capabilities for navigation, investigation, and interaction by up to 25\% compared to the previous model, leveraging WebRTC and Raspberry Pi for wireless communication}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Technology Intern, Creative Director \& Co-founder}{Jul 2019 -- Present}
+      {Robotech Labs, Teksafari Organization}{Tanzania, Germany}
+      \resumeItemListStart
+        \resumeItem{Implemented a real-time transcription device and automated hand-washing faucets to improve hygiene and reduce contact by 30\% during COVID-19, projects which were deployed in local hospitals}
+        \resumeItem{Designed and launched a user-friendly website, prototyping optimized UI/UX for improved accessibility}
+        \resumeItem{Developed an online learning platform to equip youth with essential technological skills}
+        \resumeItem{Leading efforts to expand the organization’s global entrepreneurial presence}
+        \resumeItem{Contributed to innovative projects, bridging software and hardware for real-world applications utilizing Python and C with Arduino and Raspberry Pi development platforms}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
+
